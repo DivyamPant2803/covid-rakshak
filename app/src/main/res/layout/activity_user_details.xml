@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/drawable_background"
+    tools:context=".UserDetails">
+
+    <TextView
+        android:textSize="20sp"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        app:boxStrokeColor="@color/colorAccent"
+        app:hintTextColor="@color/colorAccent"
+        android:textColorHint="@color/colorAccent"
+        android:layout_margin="10dp"
+        android:id="@+id/nameTemp"
+        >
+        <EditText
+            android:id="@+id/Name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:hint="Name"
+            android:textColor="@color/colorAccent"
+            android:inputType="textPersonName"
+            android:textColorHint="@color/colorAccent"
+            android:fontFamily="sans-serif"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.hbb20.CountryCodePicker
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:ccp_contentColor="@color/colorAccent"
+            android:id="@+id/ccp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            app:boxStrokeColor="@color/colorAccent"
+            app:hintTextColor="@color/colorAccent"
+            android:textColorHint="@color/colorAccent"
+            android:layout_margin="10dp"
+            >
+            <EditText
+                android:id="@+id/contact"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:ems="10"
+                android:hint="Contact Number"
+                android:inputType="phone"
+                android:textColor="@color/colorAccent"
+                android:fontFamily="sans-serif"
+                android:textColorHint="@color/colorAccent"
+                android:maxLength="11"/>
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        app:boxStrokeColor="@color/colorAccent"
+        app:hintTextColor="@color/colorAccent"
+        android:textColorHint="@color/colorAccent"
+        android:layout_margin="10dp"
+        >
+        <EditText
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:hint="Address"
+            android:inputType="textMultiLine"
+            android:textColor="@color/colorAccent"
+            android:fontFamily="sans-serif"
+            android:textColorHint="@color/colorAccent" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        app:boxStrokeColor="@color/colorAccent"
+        app:hintTextColor="@color/colorAccent"
+        android:textColorHint="@color/colorAccent"
+        android:layout_margin="10dp"
+        android:id="@+id/cityTemp"
+        >
+        <EditText
+            android:id="@+id/city"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:hint="City"
+            android:inputType="textPersonName"
+            android:textColor="@color/colorAccent"
+            android:fontFamily="sans-serif"
+            android:textColorHint="@color/colorAccent" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        app:boxStrokeColor="@color/colorAccent"
+        app:hintTextColor="@color/colorAccent"
+        android:textColorHint="@color/colorAccent"
+        android:layout_margin="10dp"
+        android:id="@+id/stateTemp"
+        >
+        <EditText
+            android:id="@+id/state"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:hint="State"
+            android:inputType="textPersonName"
+            android:textColor="@color/colorAccent"
+            android:fontFamily="sans-serif"
+            android:textColorHint="@color/colorAccent" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        app:boxStrokeColor="@color/colorAccent"
+        app:hintTextColor="@color/colorAccent"
+        android:textColorHint="@color/colorAccent"
+        android:layout_margin="10dp"
+        android:id="@+id/countryTemp"
+        >
+        <EditText
+            android:id="@+id/country"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:hint="Country"
+            android:inputType="textPersonName"
+            android:textColor="@color/colorAccent"
+            android:fontFamily="sans-serif"
+            android:textColorHint="@color/colorAccent" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        app:boxStrokeColor="@color/colorAccent"
+        app:hintTextColor="@color/colorAccent"
+        android:textColorHint="@color/colorAccent"
+        android:layout_margin="10dp"
+        >
+        <EditText
+            android:id="@+id/aadhaar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:hint="Aadhaar Number"
+            android:inputType="number"
+            android:maxLength="12"
+            android:textColor="@color/colorAccent"
+            android:fontFamily="sans-serif"
+            android:textColorHint="@color/colorAccent" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/button_shape"
+        android:backgroundTint="@color/colorAccent"
+        android:text="Submit"
+        android:textColor="@color/colorBox"
+        android:textSize="18sp" />
+
+</LinearLayout>

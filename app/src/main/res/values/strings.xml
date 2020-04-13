@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">covid</string>
+    <string name="Open">Open</string>
+    <string name="Close">Close</string>
+    <string name="api_key">AIzaSyAh8nXCfcAfy0VgrzH6N2VDY26JBU1NTp4</string>
+    <string name="nameerror">Enter a valid name</string>
+</resources>
